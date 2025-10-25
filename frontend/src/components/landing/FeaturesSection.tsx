@@ -1,10 +1,18 @@
 import { motion } from 'framer-motion'
+import { IconType } from 'react-icons'
 import Container from '../../shared/components/Container'
 import Section from '../../shared/components/Section'
 import AnimatedCard from '../../shared/components/AnimatedCard'
 import { FaBrain, FaBolt, FaShieldAlt, FaUsers, FaCode, FaChartLine } from 'react-icons/fa'
 
-const features = [
+interface Feature {
+  icon: IconType
+  title: string
+  description: string
+  color: string
+}
+
+const features: Feature[] = [
   {
     icon: FaBrain,
     title: 'AI Powered',

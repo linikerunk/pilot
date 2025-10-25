@@ -5,7 +5,17 @@ import Section from '../../shared/components/Section'
 import AnimatedCard from '../../shared/components/AnimatedCard'
 import { FaStar } from 'react-icons/fa'
 
-const fetchTestimonials = async () => {
+interface Testimonial {
+  id: number
+  name: string
+  role: string
+  company: string
+  avatar: string
+  rating: number
+  text: string
+}
+
+const fetchTestimonials = async (): Promise<Testimonial[]> => {
   // Simulating an API call
   return new Promise((resolve) => {
     setTimeout(() => {

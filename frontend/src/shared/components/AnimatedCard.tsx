@@ -1,6 +1,13 @@
+import { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
-function AnimatedCard({ children, delay = 0, className = '' }) {
+interface AnimatedCardProps {
+  children: ReactNode
+  delay?: number
+  className?: string
+}
+
+function AnimatedCard({ children, delay = 0, className = '' }: AnimatedCardProps) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}

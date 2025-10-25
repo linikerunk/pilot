@@ -2,9 +2,20 @@ import { motion } from 'framer-motion'
 import Container from '../../shared/components/Container'
 import Section from '../../shared/components/Section'
 
+interface Developer {
+  image: string
+  name: string
+  role: string
+  quote: string
+}
+
+interface WorkspaceImage {
+  image: string
+  title: string
+}
 
 // Create image of each developer profile
-const developers = [
+const developers: Developer[] = [
   {
     image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
     name: 'Sarah Chen',
@@ -31,7 +42,7 @@ const developers = [
   }
 ]
 
-const workspaceImages = [
+const workspaceImages: WorkspaceImage[] = [
   {
     image: 'https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&h=400&fit=crop',
     title: 'Collaborative Environment'

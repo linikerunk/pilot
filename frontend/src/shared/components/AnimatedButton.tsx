@@ -1,6 +1,14 @@
+import { ReactNode } from 'react'
 import { motion } from 'framer-motion'
 
-function AnimatedButton({ children, variant = 'primary', onClick, className = '' }) {
+interface AnimatedButtonProps {
+  children: ReactNode
+  variant?: 'primary' | 'secondary' | 'outline'
+  onClick?: () => void
+  className?: string
+}
+
+function AnimatedButton({ children, variant = 'primary', onClick, className = '' }: AnimatedButtonProps) {
   const variants = {
     primary: 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white',
     secondary: 'bg-white text-blue-600 border-2 border-blue-600 hover:bg-blue-50',

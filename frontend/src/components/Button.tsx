@@ -1,4 +1,13 @@
-function Button({ children, variant = 'primary', onClick, className = '' }) {
+import { ReactNode } from 'react'
+
+interface ButtonProps {
+  children: ReactNode
+  variant?: 'primary' | 'secondary' | 'outline'
+  onClick?: () => void
+  className?: string
+}
+
+function Button({ children, variant = 'primary', onClick, className = '' }: ButtonProps) {
   const baseStyles = 'px-6 py-2 rounded-lg font-semibold transition-all duration-200'
 
   const variants = {
