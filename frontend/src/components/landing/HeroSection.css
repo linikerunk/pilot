@@ -1,0 +1,209 @@
+/* Custom styling for Ant Design DatePicker */
+.custom-datepicker .ant-picker-input > input {
+  color: #7c3aed !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+
+.custom-datepicker .ant-picker-input > input::placeholder {
+  color: #a78bfa !important;
+  font-weight: 500 !important;
+}
+
+.custom-datepicker.ant-picker {
+  box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-datepicker.ant-picker:hover,
+.custom-datepicker.ant-picker-focused {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Custom styling for Ant Design TimePicker */
+.custom-timepicker .ant-picker-input > input {
+  color: #0891b2 !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+
+.custom-timepicker .ant-picker-input > input::placeholder {
+  color: #67e8f9 !important;
+  font-weight: 500 !important;
+}
+
+.custom-timepicker.ant-picker {
+  box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+.custom-timepicker.ant-picker:hover,
+.custom-timepicker.ant-picker-focused {
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Dropdown panel styling */
+.ant-picker-dropdown {
+  z-index: 9999;
+}
+
+.ant-picker-panel-container {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+  border-radius: 20px !important;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5) !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.ant-picker-header {
+  color: white !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  padding: 16px !important;
+}
+
+.ant-picker-header-view button {
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+}
+
+.ant-picker-header-view button:hover {
+  color: #fde047 !important;
+}
+
+.ant-picker-header button {
+  color: white !important;
+}
+
+.ant-picker-header button:hover {
+  color: #fde047 !important;
+}
+
+.ant-picker-content th {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 600 !important;
+}
+
+.ant-picker-cell {
+  color: white !important;
+}
+
+.ant-picker-cell-in-view {
+  color: white !important;
+}
+
+.ant-picker-cell:hover:not(.ant-picker-cell-selected):not(.ant-picker-cell-disabled) .ant-picker-cell-inner {
+  background: rgba(253, 224, 71, 0.3) !important;
+  transform: scale(1.1);
+  transition: all 0.2s ease;
+}
+
+.ant-picker-cell-selected .ant-picker-cell-inner {
+  background: linear-gradient(135deg, #fde047 0%, #f59e0b 100%) !important;
+  color: #7c3aed !important;
+  font-weight: bold !important;
+  border-radius: 10px !important;
+  box-shadow: 0 4px 15px rgba(253, 224, 71, 0.5) !important;
+}
+
+.ant-picker-cell-today .ant-picker-cell-inner::before {
+  border: 2px solid #fde047 !important;
+  border-radius: 10px !important;
+}
+
+.ant-picker-cell-disabled {
+  opacity: 0.3;
+}
+
+.ant-picker-cell-disabled .ant-picker-cell-inner {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Footer styling */
+.ant-picker-footer {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.ant-picker-today-btn {
+  color: #fde047 !important;
+  font-weight: 600 !important;
+}
+
+.ant-picker-today-btn:hover {
+  color: #fbbf24 !important;
+}
+
+/* TimePicker Panel Styling */
+.ant-picker-time-panel {
+  background: linear-gradient(135deg, #0891b2 0%, #06b6d4 100%) !important;
+}
+
+.ant-picker-time-panel-column {
+  overflow-y: auto !important;
+}
+
+.ant-picker-time-panel-cell {
+  color: white !important;
+}
+
+.ant-picker-time-panel-cell-inner {
+  color: white !important;
+  border-radius: 8px !important;
+  transition: all 0.2s ease !important;
+}
+
+.ant-picker-time-panel-cell-inner:hover {
+  background: rgba(253, 224, 71, 0.3) !important;
+  transform: scale(1.05);
+}
+
+.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner {
+  background: linear-gradient(135deg, #fde047 0%, #f59e0b 100%) !important;
+  color: #0891b2 !important;
+  font-weight: bold !important;
+  box-shadow: 0 4px 15px rgba(253, 224, 71, 0.5) !important;
+}
+
+.ant-picker-time-panel-cell-disabled .ant-picker-time-panel-cell-inner {
+  color: rgba(255, 255, 255, 0.3) !important;
+}
+
+/* Scrollbar styling for time picker */
+.ant-picker-time-panel-column::-webkit-scrollbar {
+  width: 6px;
+}
+
+.ant-picker-time-panel-column::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.ant-picker-time-panel-column::-webkit-scrollbar-thumb {
+  background: rgba(253, 224, 71, 0.5);
+  border-radius: 10px;
+}
+
+.ant-picker-time-panel-column::-webkit-scrollbar-thumb:hover {
+  background: rgba(253, 224, 71, 0.8);
+}
+
+/* Animation for opening */
+@keyframes antPickerSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.ant-picker-dropdown {
+  animation: antPickerSlideUp 0.3s ease-out;
+}
